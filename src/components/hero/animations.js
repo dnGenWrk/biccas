@@ -19,7 +19,7 @@ function heroAnimations() {
   };
   const t1 = gsap.timeline();
   t1.from(headeritemsAnimate.animObj1, {
-    // opacity: 0,
+    opacity: 0,
     width: 0,
     stroke: "#222",
     strokeWidth: 0,
