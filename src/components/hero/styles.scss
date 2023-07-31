@@ -25,6 +25,30 @@
     left: 0;
     bottom: 0;
   }
+  .hero-custom-pic2 {
+    position: absolute;
+    width: 132px;
+    right: 0;
+    bottom: 134px;
+  }
+
+  .hero-message-block {
+    position: absolute;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 262px;
+    height: auto;
+    left: 20px;
+    top: 48px;
+    &.mess-1 {
+      opacity: 0;
+    }
+    &.mess-2 {
+      opacity: 0;
+      width: 138px;
+    }
+  }
   @media (min-width: 768px) {
     width: 339px;
     height: 418px;

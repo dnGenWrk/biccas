@@ -6,16 +6,11 @@ gsap.registerPlugin(MotionPathPlugin);
 
 function heroAnimations() {
   const headeritemsAnimate = {
-    // animObj1: document.querySelectorAll(".hero-shape-1"),
     animObj1: document.getElementById("pathsh1"),
-
-    //animObj2: document.querySelectorAll(".aim-obj2"),
-    // animObj3: document.querySelectorAll(".aim-obj3"),
-    //animObj4: document.querySelectorAll(".aim-obj4"),
-    //animObj5: document.querySelectorAll(".aim-obj5"),
-    // animObj6: document.querySelectorAll(".aim-obj6"),
-    // animObj7: document.querySelectorAll(".aim-obj7"),
-    // animObj8: document.querySelectorAll(".aim-obj8"),
+    animObj2: document.querySelector(".hero-custom-img-block"),
+    animObj3: document.querySelector(".hero-custom-pic2"),
+    animObj4: document.querySelector(".mess-1"),
+    animObj5: document.querySelector(".hero-custom-shape1"),
   };
   const t1 = gsap.timeline();
   t1.from(headeritemsAnimate.animObj1, {
@@ -25,6 +20,35 @@ function heroAnimations() {
     strokeWidth: 0,
     duration: 1.2,
     delay: 0.5,
+  });
+  t1.from(headeritemsAnimate.animObj2, {
+    backgroundColor: "transparent",
+    duration: 0.8,
+    delay: 0.2,
+  });
+
+  t1.from(headeritemsAnimate.animObj3, {
+    x: -55,
+    y: 90,
+    duration: 1.2,
+    ease: "power3.out",
+  });
+  t1.from(
+    headeritemsAnimate.animObj4,
+    {
+      opacity: 1,
+      y: 300,
+      duration: 3,
+      ease: "power3.out",
+    },
+    0.5
+  );
+  t1.from(headeritemsAnimate.animObj5, {
+    opacity: 0,
+    width: 0,
+    x: -250,
+    duration: 0.9,
+    ease: "power3.out",
   });
 }
 export default heroAnimations;
