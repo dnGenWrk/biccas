@@ -1,8 +1,8 @@
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/dist/MotionPathPlugin";
-import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
-import { TextPlugin } from "gsap/dist/TextPlugin";
-gsap.registerPlugin(MotionPathPlugin);
+//import { ScrollToPlugin } from "gsap/dist/ScrollToPlugin";
+//import { TextPlugin } from "gsap/dist/TextPlugin";
+//gsap.registerPlugin(MotionPathPlugin);
 
 function heroAnimations() {
   const headeritemsAnimate = {
@@ -30,7 +30,7 @@ function heroAnimations() {
   t1.from(headeritemsAnimate.animObj3, {
     x: -55,
     y: 90,
-    duration: 1.2,
+    duration: 1,
     ease: "power3.out",
   });
   t1.from(
@@ -39,16 +39,21 @@ function heroAnimations() {
       opacity: 1,
       y: 300,
       duration: 3,
+      delay: 1.6,
       ease: "power3.out",
     },
     0.5
   );
-  t1.from(headeritemsAnimate.animObj5, {
-    opacity: 0,
-    width: 0,
-    x: -250,
-    duration: 0.9,
-    ease: "power3.out",
-  });
+  t1.from(
+    headeritemsAnimate.animObj5,
+    {
+      opacity: 0,
+      width: 0,
+      x: -250,
+      duration: 0.9,
+      ease: "power3.out",
+    },
+    3.7
+  );
 }
 export default heroAnimations;
