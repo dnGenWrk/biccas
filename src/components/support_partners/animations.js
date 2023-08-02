@@ -9,11 +9,9 @@ function supportPartnersAnimate() {
   const iconsSet = document.querySelectorAll(".support-partners-icons");
   const iconContainer = document.querySelectorAll(".icon-container");
 
-  //const t2 = gsap.timeline();
   gsap.from(stars, {
     scrollTrigger: triggerBlock,
     fill: "#BBBBBB",
-    // opacity: 0,
     duration: 0.6,
     stagger: 0.2,
   });
@@ -28,9 +26,6 @@ function supportPartnersAnimate() {
 
   gsap.from(iconsSet, {
     scrollTrigger: triggerBlock,
-    // fill: "#BBBBBB",
-    // opacity: 0,
-    //stroke: "#BBBBBB",
     y: 50,
     duration: 0.65,
     stagger: 0.4,
