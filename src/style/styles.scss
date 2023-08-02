@@ -3,3 +3,22 @@
 @tailwind utilities;
 @import "../components/hero/styles.scss";
 @import "../components/partners/styles.scss";
+.what-benifit-section li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url("./components/what-benifit/img/list-img.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 14px;
+    top: 9px;
+    position: relative;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
