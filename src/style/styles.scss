@@ -22,3 +22,25 @@
     margin-bottom: 0;
   }
 }
+.choose-plan-section {
+  [data-active-bill="yearly"] {
+    .cta-bg {
+      transform: translate(100%, 0);
+    }
+  }
+  [data-active-bill="monthly"] {
+    .cta-bg {
+      transform: translate(0, 0);
+    }
+  }
+  .cta-bg {
+    transition: all;
+    transition-duration: 0.8s;
+    transition-delay: 0.2s;
+  }
+  .cta-prices {
+    &.active {
+      color: white;
+    }
+  }
+}
