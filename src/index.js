@@ -8,6 +8,7 @@ import sectionOurFeaturesAnimate from "./components/our-features/animations";
 import sectionWhatBenefitsAnimate from "./components/what-benifit/animations";
 import "./components/choose-plan/switch_prices";
 import pricesSectionAnimate from "./components/choose-plan/animations";
+import "./components/leadform/validate_email";
 
 window.onload = function () {
   //animateTopNav();

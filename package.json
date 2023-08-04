@@ -41,6 +41,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "gsap": "file:gsap-bonus.tgz"
+    "gsap": "file:gsap-bonus.tgz",
+    "validator": "^13.11.0"
   }
 }
