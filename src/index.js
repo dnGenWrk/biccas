@@ -7,6 +7,7 @@ import supportPartnersAnimate from "./components/support_partners/animations";
 import sectionOurFeaturesAnimate from "./components/our-features/animations";
 import sectionWhatBenefitsAnimate from "./components/what-benifit/animations";
 import "./components/choose-plan/switch_prices";
+import pricesSectionAnimate from "./components/choose-plan/animations";
 
 window.onload = function () {
   //animateTopNav();
@@ -15,4 +16,5 @@ window.onload = function () {
   //supportPartnersAnimate();
   // sectionOurFeaturesAnimate();
   //sectionWhatBenefitsAnimate();
+  pricesSectionAnimate();
 };
