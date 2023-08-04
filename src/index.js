@@ -11,11 +11,11 @@ import pricesSectionAnimate from "./components/choose-plan/animations";
 import "./components/leadform/validate_email";
 
 window.onload = function () {
-  //animateTopNav();
-  //heroAnimations();
-  // partnersAnimations();
-  //supportPartnersAnimate();
-  // sectionOurFeaturesAnimate();
-  //sectionWhatBenefitsAnimate();
+  animateTopNav();
+  heroAnimations();
+  partnersAnimations();
+  supportPartnersAnimate();
+  sectionOurFeaturesAnimate();
+  sectionWhatBenefitsAnimate();
   pricesSectionAnimate();
 };
